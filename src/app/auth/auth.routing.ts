@@ -1,7 +1,9 @@
 import { Routes } from '@angular/router';
 
-import { RegisterComponent } from './register/register.component';
-import { SignInComponent } from './sign-in/sign-in.component';
+import { SignInComponent } from './pages/sign-in/sign-in.component';
+import { RegisterComponent } from './pages/register/register.component';
+
+
 
 
 
