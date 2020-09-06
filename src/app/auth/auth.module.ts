@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
 
-
-import { AuthRoutes } from './auth.routing';
 import { RegisterComponent } from './pages/register/register.component';
 import { SignInComponent } from './pages/sign-in/sign-in.component';
+import { AuthRoutingModule } from './auth-routing.module';
 
 
 
@@ -17,7 +15,7 @@ import { SignInComponent } from './pages/sign-in/sign-in.component';
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(AuthRoutes),
+    AuthRoutingModule
   ]
 })
 export class AuthModule { }
