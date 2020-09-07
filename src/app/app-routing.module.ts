@@ -4,7 +4,7 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 const routes: Routes = [
   {
     path: 'order-list',
-    loadChildren: () => import('./orders/orders.module').then(m => m.OrdersModule)
+    loadChildren: () => import('./modules/orders/orders.module').then(m => m.OrdersModule)
   },
   {
     path: '**',

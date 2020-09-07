@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { RegisterComponent } from '../auth/pages/register/register.component';
 import { OrderDetailsComponent } from './pages/order-details/order-details.component';
-
+import { OrderListComponent } from './pages/order-list/order-list.component';
 
 
 const routes: Routes = [
 
     {
         path: '',
-        component: RegisterComponent
+        component: OrderListComponent
     },
     {
         path: ':type/:id',

@@ -1,11 +1,23 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+import { SidenavComponent } from './navigation/sidenav/sidenav.component';
+import { SharedModule } from '../shared/shared.module';
+import { HeaderComponent } from './navigation/header/header.component';
+import { FooterComponent } from './navigation/footer/footer.component';
+
 
 
 @NgModule({
-  declarations: [],
+  declarations: [SidenavComponent, HeaderComponent, FooterComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule,
+    FlexLayoutModule
+  ],
+  exports: [
+    SidenavComponent, HeaderComponent, FooterComponent
   ]
 })
 export class CoreModule {
