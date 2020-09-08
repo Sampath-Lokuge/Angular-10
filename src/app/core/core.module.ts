@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { SidenavComponent } from './navigation/sidenav/sidenav.component';
-import { SharedModule } from '../shared/shared.module';
 import { HeaderComponent } from './navigation/header/header.component';
 import { FooterComponent } from './navigation/footer/footer.component';
+import { MaterialModule } from '../shared/material.module';
 
 
 
@@ -13,7 +13,7 @@ import { FooterComponent } from './navigation/footer/footer.component';
   declarations: [SidenavComponent, HeaderComponent, FooterComponent],
   imports: [
     CommonModule,
-    SharedModule,
+    MaterialModule,
     FlexLayoutModule
   ],
   exports: [
