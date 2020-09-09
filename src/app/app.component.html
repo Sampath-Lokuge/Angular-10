@@ -1,11 +1,7 @@
 <mat-sidenav-container>
 
     <mat-sidenav #sidenav role="navigation">
-        <!-- <app-sidenav (sidenavClose)="sidenav.close()"></app-sidenav> -->
-        <ng-material-multilevel-menu [configuration]='config' [items]='appItems' (selectedItem)="selectedItem($event)"
-            [expandCollapseStatus]="expandCollapseStatus" (selectedLabel)="selectedLabel($event)">
-        </ng-material-multilevel-menu>
-
+        <app-sidenav (sidenavClose)="sidenav.close()"></app-sidenav>
     </mat-sidenav>
 
     <mat-sidenav-content fxLayout="column">

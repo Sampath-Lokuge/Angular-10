@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { NgMaterialMultilevelMenuModule } from 'ng-material-multilevel-menu';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,7 +22,6 @@ import { MaterialModule } from './shared/material.module';
     CoreModule,
     FlexLayoutModule,
     MaterialModule,
-    NgMaterialMultilevelMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
